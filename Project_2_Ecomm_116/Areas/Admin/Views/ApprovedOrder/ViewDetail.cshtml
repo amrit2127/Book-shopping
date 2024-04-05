@@ -1,0 +1,91 @@
+﻿@model Project_2_Ecomm_116.Models.OrderHeader
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Details</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Customer Details</h2>
+
+    <table>
+        <tr>
+            <th>Order Id</th>
+            <th>Name</th>
+            <th>Street Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Postal Code</th>
+            <th>Phone Number</th>
+        </tr>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.Name</td>
+            <td>@Model.StreetAddress</td>
+            <td>@Model.City</td>
+            <td>@Model.State</td>
+            <td>@Model.PostalCode</td>
+            <td>@Model.PhoneNumber</td>
+        </tr>
+
+    </table>
+
+    <br />
+    <br />
+    <br />
+
+
+    <h2>Order Details</h2>
+
+    <table>
+        <tr>
+            <th>Order Date</th>
+            <th>Shipping Date</th>
+            <th>Order Status</th>
+            <th>Payment Status</th>
+            <th>Payment Date</th>
+            <th>Payment Due Date</th>
+            <th>Transaction Id</th>
+            <th>Order Total</th>
+        </tr>
+        <tr>
+            <td>@Model.OrderDate</td>
+            <td>@Model.ShippingDate</td>
+            <td>@Model.OrderStatus</td>
+            <td>@Model.PaymentStatus</td>
+            <td>@Model.PaymentDate</td>
+            <td>@Model.PaymentDueDate</td>
+            <td>@Model.TransactionId</td>
+            <td>@Model.OrderTotal</td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="col-3">
+        <a asp-action="Index" asp-controller="Orders" asp-area="Admin" class="btn btn-info">
+            Back To List
+        </a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|d:\\asp.netcore\\project_2_ecomm_116\\project_2_ecomm_116\\areas\\identity\\pages\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|solutionrelative:project_2_ecomm_116\\areas\\identity\\pages\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|d:\\asp.netcore\\project_2_ecomm_116\\project_2_ecomm_116\\areas\\identity\\pages\\account\\accessdenied.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|solutionrelative:project_2_ecomm_116\\areas\\identity\\pages\\account\\accessdenied.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|d:\\asp.netcore\\project_2_ecomm_116\\project_2_ecomm_116\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|solutionrelative:project_2_ecomm_116\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|d:\\asp.netcore\\project_2_ecomm_116\\project_2_ecomm_116\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|solutionrelative:project_2_ecomm_116\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|d:\\asp.netcore\\project_2_ecomm_116\\project_2_ecomm_116\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|solutionrelative:project_2_ecomm_116\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|d:\\asp.netcore\\project_2_ecomm_116\\project_2_ecomm_116\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|solutionrelative:project_2_ecomm_116\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D0AA026-0BE0-4825-B314-D9336EE92AB2}|Project_2_Ecomm_116.Utility\\Project_2_Ecomm_116.Utility.csproj|d:\\asp.netcore\\project_2_ecomm_116\\project_2_ecomm_116.utility\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D0AA026-0BE0-4825-B314-D9336EE92AB2}|Project_2_Ecomm_116.Utility\\Project_2_Ecomm_116.Utility.csproj|solutionrelative:project_2_ecomm_116.utility\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|d:\\asp.netcore\\project_2_ecomm_116\\project_2_ecomm_116\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{765C6D39-B131-4B06-8020-917848B8E1A7}|Project_2_Ecomm_116\\Project_2_Ecomm_116.csproj|solutionrelative:project_2_ecomm_116\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccessDenied.cshtml.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml.cs",
+              "RelativeDocumentMoniker": "Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml.cs",
+              "RelativeToolTip": "Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T14:10:19.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-31T14:10:10.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExternalLogin.cshtml.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeDocumentMoniker": "Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeToolTip": "Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAcwMcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T06:51:03.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Project_2_Ecomm_116\\Areas\\Customer\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Project_2_Ecomm_116\\Areas\\Customer\\Controllers\\CartController.cs",
+              "ViewState": "AQIAALYAAAAAAAAAAADwv8YAAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T06:50:43.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAAAKIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T05:39:03.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Project_2_Ecomm_116\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAB0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-31T05:39:00.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SD.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116.Utility\\SD.cs",
+              "RelativeDocumentMoniker": "Project_2_Ecomm_116.Utility\\SD.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116.Utility\\SD.cs",
+              "RelativeToolTip": "Project_2_Ecomm_116.Utility\\SD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T08:49:11.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Program.cs",
+              "RelativeDocumentMoniker": "Project_2_Ecomm_116\\Program.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Project_2_Ecomm_116\\Project_2_Ecomm_116\\Program.cs",
+              "RelativeToolTip": "Project_2_Ecomm_116\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-15T10:54:00.253Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

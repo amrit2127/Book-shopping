@@ -1,0 +1,12 @@
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.Models\bin\Debug\net6.0\Project_2_Ecomm_116.Models.deps.json
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.Models\bin\Debug\net6.0\Project_2_Ecomm_116.Models.dll
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.Models\bin\Debug\net6.0\Project_2_Ecomm_116.Models.pdb
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.Models\obj\Debug\net6.0\Project_2_Ecomm_116.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.Models\obj\Debug\net6.0\Project_2_Ecomm_116.Models.AssemblyInfoInputs.cache
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.Models\obj\Debug\net6.0\Project_2_Ecomm_116.Models.AssemblyInfo.cs
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.Models\obj\Debug\net6.0\Project_2_Ecomm_116.Models.csproj.CoreCompileInputs.cache
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.Models\obj\Debug\net6.0\Project_2_Ecomm_116.Models.dll
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.Models\obj\Debug\net6.0\refint\Project_2_Ecomm_116.Models.dll
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.Models\obj\Debug\net6.0\Project_2_Ecomm_116.Models.pdb
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.Models\obj\Debug\net6.0\ref\Project_2_Ecomm_116.Models.dll
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.Models\obj\Debug\net6.0\Project_2_Ecomm_116.Models.csproj.AssemblyReference.cache

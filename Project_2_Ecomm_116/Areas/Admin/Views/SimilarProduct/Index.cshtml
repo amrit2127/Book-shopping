@@ -1,0 +1,28 @@
+﻿
+
+@{
+    ViewData["Title"] = "Product Index";
+}
+
+<h1 class="text-black text-center">Product Index</h1>
+
+@* Display the dropdown with products *@
+
+<form asp-controller="SimilarProduct" asp-action="Details" method="get">
+    <label for="productId" class="fw-bold text-black">Select a Product:</label>
+    <select id="productId" name="id" asp-items="@ViewBag.ProductList" class="form-control">
+        <option value="">-- Select a Product --</option>
+    </select>
+    <br/>
+    <button type="submit" class="btn btn-info">Search for Similar Products</button>
+
+</form>
+<br/>
+<br/>
+
+@* 
+<form asp-controller="SimilarProduct" asp-action="Search" method="post">
+    <button type="submit" class="btn btn-info">Details of Product</button>
+</form>
+ *@
+

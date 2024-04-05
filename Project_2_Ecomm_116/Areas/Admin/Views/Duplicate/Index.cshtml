@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Project_2_Ecomm_116.Models.OrderDetail>
+
+
+<div class="row">
+    <h2 class="text-primary">All Orders Index</h2>
+    <br/>
+</div>
+<div class="rounded container row border">
+    <table class="table table-bordered table-striped table-hover table-active">
+        <thead>
+            <tr>
+                <th>Order Id</th>
+                <th>Name</th>
+                <th>State</th>
+                <th>Order Date</th>
+                <th>Order Status</th>
+                <th>Order Total</th>
+                <th>Order Product</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.OrderHeader.Id</td>
+                    <td>@order.OrderHeader.Name</td>
+                    <td>@order.OrderHeader.State</td>
+                    <td>@order.OrderHeader.OrderDate</td>
+                    <td>@order.OrderHeader.OrderStatus</td>
+                    <td>@order.OrderHeader.OrderTotal</td>
+                    <td>@order.Product.Title</td>
+
+                    <td>
+                        <a asp-action="Duplicate" asp-route-Id="@order.OrderHeader.Id" class="btn btn-success form-control">
+                            Duplicate
+                            </a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

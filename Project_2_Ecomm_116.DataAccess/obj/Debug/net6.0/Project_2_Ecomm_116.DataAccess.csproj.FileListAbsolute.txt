@@ -1,0 +1,17 @@
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\bin\Debug\net6.0\Project_2_Ecomm_116.DataAccess.deps.json
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\bin\Debug\net6.0\Project_2_Ecomm_116.DataAccess.dll
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\bin\Debug\net6.0\Project_2_Ecomm_116.DataAccess.pdb
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\obj\Debug\net6.0\Project_2_Ecomm_116.DataAccess.csproj.AssemblyReference.cache
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\obj\Debug\net6.0\Project_2_Ecomm_116.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\obj\Debug\net6.0\Project_2_Ecomm_116.DataAccess.AssemblyInfoInputs.cache
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\obj\Debug\net6.0\Project_2_Ecomm_116.DataAccess.AssemblyInfo.cs
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\obj\Debug\net6.0\Project_2_Ecomm_116.DataAccess.csproj.CoreCompileInputs.cache
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\obj\Debug\net6.0\Project_2_Ecomm_116.DataAccess.dll
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\obj\Debug\net6.0\refint\Project_2_Ecomm_116.DataAccess.dll
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\obj\Debug\net6.0\Project_2_Ecomm_116.DataAccess.pdb
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\obj\Debug\net6.0\ref\Project_2_Ecomm_116.DataAccess.dll
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\bin\Debug\net6.0\Project_2_Ecomm_116.DataAccess.runtimeconfig.json
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\obj\Debug\net6.0\Project_2_Ecomm_116.DataAccess.genruntimeconfig.cache
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\bin\Debug\net6.0\Project_2_Ecomm_116.Models.dll
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\bin\Debug\net6.0\Project_2_Ecomm_116.Models.pdb
+D:\ASP.NETCORE\Project_2_Ecomm_116\Project_2_Ecomm_116.DataAccess\obj\Debug\net6.0\Project_.32B8893B.Up2Date

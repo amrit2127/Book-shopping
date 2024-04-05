@@ -1,0 +1,277 @@
+﻿@model IEnumerable<Project_2_Ecomm_116.Models.Product>
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+@* <h1>Product Details</h1> *@
+
+@* @if (Model != null)
+{
+    @foreach (var item in Model)
+    {
+        <dl>
+            <dt>Product ID:</dt>
+            <dd>@item.Id</dd>
+
+            <dt>Title:</dt>
+            <dd>@item.Title</dd>
+
+            <!-- Add other properties as needed -->
+            <!-- You can also add additional details or formatting here -->
+
+        </dl>
+    }
+    
+}
+else
+{
+    <p>Product not found.</p>
+} *@
+
+
+
+@* @if (Model != null && Model.Any())
+{
+    @foreach (var item in Model)
+    {
+        <form method="post">
+            <input type="hidden" asp-for="@item.Id" />
+            <div class="container backgroundWhite">
+                <div class="card">
+                    <div class="card-header bg-light text-light ml-0 row container">
+                        <div class="col-12 col-md-6">
+                            <h1 class="text-primary">@item.Title</h1>
+                            <p class="text-warning">by @item.Author</p>
+                        </div> *@
+                        @* <div class="col-12 col-md-6 text-md-right pt-4">
+                <span class="badge badge-success pt-2" style="height:30px;">@Model.CoverType.Name</span>
+                <span class="badge badge-warning pt-2" style="height:30px;">@Model.Category.Name</span>
+                </div> *@
+                    @* </div>
+                    <div class="card-body">
+                        <div class="container rounded p-2">
+                            <div class="row">
+                                <div class="col-8 col-lg-8">
+
+                                    <div class="row pl-2">
+                                        <h5 class="text-muted">ISBN : @item.ISBN </h5>
+                                    </div>
+                                    <div class="row pl-2">
+                                        <h5 class="text-muted pb-2">List Price: <strike>$ @item.ListPrice</strike></h5>
+                                    </div>
+                                    <div class="row text-center pl-2">
+                                        <div class="p-1 col-2 bg-secondary border-bottom">
+                                            <div>Quantity</div>
+                                        </div>
+                                        <div class="p-1 col-2 bg-secondary border-bottom">
+                                            <div>1-49</div>
+                                        </div>
+                                        <div class="p-1 col-2 bg-secondary border-bottom">
+                                            <div>50-99</div>
+                                        </div>
+                                        <div class="p-1 col-2 bg-secondary border-bottom">
+                                            <div>100+</div>
+                                        </div>
+                                    </div>
+                                    <div class="row text-center pl-2" style="color:maroon; font-weight:bold">
+                                        <div class="p-1 col-2 bg-secondary">
+                                            <div>Price</div>
+                                        </div>
+                                        <div class="p-1 col-2 bg-secondary">
+                                            <div>@item.Price</div>
+                                        </div>
+                                        <div class="p-1 col-2 bg-secondary">
+                                            <div>@item.Price50</div>
+                                        </div>
+                                        <div class="p-1 col-2 bg-secondary">
+                                            <div>@item.Price100</div>
+                                        </div>
+                                    </div>
+                                    <div class="row pl-2">
+                                        <p class="text-secondary">@Html.Raw(item.Description)</p>
+                                    </div> *@
+                                    @*  <div class="row pl-2">
+                            <div class="col-2 text-primary"><h4>Count</h4></div>
+                            <div class="col-10"><input asp-for="@Model.Count" class="form-control" /></div>
+                            </div> *@
+                                @* </div>
+                                <div class="col-12 col-lg-3 offset-lg-1 text-center">
+                                    <img src="@item.ImageUrl" width="100%" class="rounded" />
+                                </div>
+                            </div>
+                        </div>
+                    </div> *@
+                    @*  <div class="card-footer">
+            <div class="row">
+            <div class="col-12 col-md-6 pb-1">
+            <a asp-action="Index" class="btn btn-success form-control  btn-square btn-lg" style="height:50px;">Back to List</a>
+            </div>
+            <div class="col-12 col-md-6 pb-1">
+
+            <button type="submit" value="Add to Cart" class="btn btn-primary btn-square btn-lg form-control" style="height:50px;">Add to Cart</button>
+
+            </div>
+            </div>
+            </div> *@
+               @*  </div>
+            </div>
+        </form>
+    }
+} *@
+
+@* @if (Model != null)
+{
+    <dl>
+        <dt>Product ID:</dt>
+        <dd>@Model.Id</dd>
+
+        <dt>Title:</dt>
+        <dd>@Model.Title</dd>
+
+        <!-- Add other properties as needed -->
+        <!-- You can also add additional details or formatting here -->
+
+    </dl> *@
+
+
+
+
+
+<h2>Similar Products of the Product you have selected</h2>
+
+@if (Model != null && Model.Any())
+{
+    @* <table class="table">
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <!-- Add other columns as needed -->
+        </tr>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Title</td>
+                <!-- Add other cells as needed -->
+            </tr>
+        }
+    </table> *@
+    <div class="container">
+        <div class="row">
+            @foreach (var product in Model)
+            {
+                @* <div class="col-md-4 mb-4">
+        <div class="card">
+        <div class="card-header">
+        Product ID: @product.Id
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">@product.Title</h5>
+        <!-- Add other card content as needed -->
+        </div>
+        </div>
+        </div> *@
+                <input type="hidden" asp-for="@product.Id" />
+                <div class="container backgroundWhite">
+                    <div class="card">
+                        <div class="card-header bg-light text-light ml-0 row container">
+                            <div class="col-12 col-md-6">
+                                <h1 class="text-primary">@product.Title</h1>
+                                <p class="text-warning">by @product.Author</p>
+                            </div>
+                            @* <div class="col-12 col-md-6 text-md-right pt-4">
+                    <span class="badge badge-success pt-2" style="height:30px;">@product.CoverType.Name</span>
+                    <span class="badge badge-warning pt-2" style="height:30px;">@product.Category.Name</span>
+                    </div> *@
+                        </div>
+                        <div class="card-body">
+                            <div class="container rounded p-2">
+                                <div class="row">
+                                    <div class="col-8 col-lg-8">
+
+                                        <div class="row pl-2">
+                                            <h5 class="text-muted">ISBN : @product.ISBN </h5>
+                                        </div>
+                                        <div class="row pl-2">
+                                            <h5 class="text-muted pb-2">List Price: <strike>$ @product.ListPrice</strike></h5>
+                                        </div>
+                                        <div class="row text-center pl-2">
+                                            <div class="p-1 col-2 bg-secondary border-bottom">
+                                                <div>Quantity</div>
+                                            </div>
+                                            <div class="p-1 col-2 bg-secondary border-bottom">
+                                                <div>1-49</div>
+                                            </div>
+                                            <div class="p-1 col-2 bg-secondary border-bottom">
+                                                <div>50-99</div>
+                                            </div>
+                                            <div class="p-1 col-2 bg-secondary border-bottom">
+                                                <div>100+</div>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center pl-2" style="color:maroon; font-weight:bold">
+                                            <div class="p-1 col-2 bg-secondary">
+                                                <div>Price</div>
+                                            </div>
+                                            <div class="p-1 col-2 bg-secondary">
+                                                <div>@product.Price</div>
+                                            </div>
+                                            <div class="p-1 col-2 bg-secondary">
+                                                <div>@product.Price50</div>
+                                            </div>
+                                            <div class="p-1 col-2 bg-secondary">
+                                                <div>@product.Price100</div>
+                                            </div>
+                                        </div>
+                                        <div class="row pl-2">
+                                            <p class="text-secondary">@Html.Raw(product.Description)</p>
+                                        </div>
+                                        @*  <div class="row pl-2">
+                                <div class="col-2 text-primary"><h4>Count</h4></div>
+                                <div class="col-10"><input asp-for="@Model.Count" class="form-control" /></div>
+                                </div> *@
+                                    </div>
+                                    <div class="col-12 col-lg-3 offset-lg-1 text-center">
+                                        <img src="@product.ImageUrl" width="100%" class="rounded" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @*  <div class="card-footer">
+                <div class="row">
+                <div class="col-12 col-md-6 pb-1">
+                <a asp-action="Index" class="btn btn-success form-control  btn-square btn-lg" style="height:50px;">Back to List</a>
+                </div>
+                <div class="col-12 col-md-6 pb-1">
+
+                <button type="submit" value="Add to Cart" class="btn btn-primary btn-square btn-lg form-control" style="height:50px;">Add to Cart</button>
+
+                </div>
+                </div>
+                </div> *@
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+}
+
+else
+{
+    <p>Product not found.</p>
+}
+
+
+
+<a asp-controller="SimilarProduct" asp-action="Index" class="btn btn-success">Back to Product List</a>
+
+<button type="submit" value="Add to Cart" class="btn btn-success">Add to Cart</button>
+
+<br />
+<br />
+<br />
+
+
+

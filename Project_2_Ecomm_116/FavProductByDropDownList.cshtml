@@ -1,0 +1,39 @@
+﻿@using Project_2_Ecomm_116.Models;
+
+<h2 class="text-primary text-center">
+    List of Products by Purchased Quantity</h2>
+
+
+@using (Html.BeginForm("FavProductByDropDownList", "FavouriteProduct", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Select a product:")
+        @Html.DropDownList("productId", ViewBag.Products as SelectList, "Select a product", new { @class = "form-control" })
+    </div>
+    <br />
+    <input type="submit" value="Show Product" class="btn btn-primary" />
+}
+@if (ViewBag.ProductCounts != null)
+{
+    var selectedProduct = ViewBag.SelectedProduct as Product;
+
+    <table class="table table-bordered table-active table-hover">
+        <thead>
+            <tr>
+                <th class="bg-primary text-white">Title</th>
+                <th class="bg-primary text-white">Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var OrderStatus in @ViewBag.ProductCounts)
+            {
+                <tr>
+                    <td>@selectedProduct.Title</td>
+                    <td>@OrderStatus</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+

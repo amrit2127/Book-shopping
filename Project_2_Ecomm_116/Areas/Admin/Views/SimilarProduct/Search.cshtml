@@ -1,0 +1,30 @@
+﻿@model Project_2_Ecomm_116.Models.Product
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<h1>Product Details</h1>
+
+@if (Model != null)
+{
+   
+        <dl>
+            <dt>Product ID:</dt>
+            <dd>@Model.Id</dd>
+
+            <dt>Title:</dt>
+            <dd>@Model.Title</dd>
+
+            <!-- Add other properties as needed -->
+            <!-- You can also add additional details or formatting here -->
+
+        </dl>
+   
+
+}
+else
+{
+    <p>Product not found.</p>
+}
+

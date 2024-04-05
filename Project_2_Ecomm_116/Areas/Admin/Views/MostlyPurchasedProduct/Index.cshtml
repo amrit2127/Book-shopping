@@ -1,0 +1,88 @@
+﻿@model Project_2_Ecomm_116.Models.ViewModels.ProductsWithCountsViewModel
+
+<h2 class="text-primary text-center">Mostly Purchased Products</h2>
+<br />
+<form method="get">
+
+    <label class="fw-bold" for="startDate">Start Date:</label>
+    <input type="date" id="startDate" name="startDate">
+
+    <label class="fw-bold" for="endDate">End Date:</label>
+    <input type="date" id="endDate" name="endDate">
+
+
+    @*   Radio button of monthly .. yearly  *@
+
+    <label class="fw-bold">View Option:</label>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="viewOption" id="monthly" value="Monthly" checked>
+        <label class="form-check-label" for="monthly">Monthly</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="viewOption" id="yearly" value="Yearly">
+        <label class="form-check-label" for="yearly">Yearly</label>
+    </div>
+
+
+
+
+    <button type="submit" class="btn btn-success">Search</button>
+</form>
+
+
+<br/>
+@if (Model.MonthSummary != null)
+{
+    <h3>Monthly Summary:</h3>
+    <table class="table table-group-divider table-striped-columns table-sm">
+        <thead>
+            <tr>
+                <th>Month Name</th>
+                <th>Number of Orders</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var monthSummary in Model.MonthSummary)
+            {
+                <tr>
+                    <td>@monthSummary.Key</td>
+                    <td>@monthSummary.Value</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<br />
+
+
+
+
+
+@if (Model.ProductCounts != null && Model.ProductCounts.Count > 0)
+{
+    <table class="table table-bordered table-active table-hover">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Total Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var productCount in Model.ProductCounts)
+            {
+                <tr>
+                    <td>@productCount.ProductName</td>
+                    <td>@productCount.Count</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No products found.</p>
+}
+
+
+ 

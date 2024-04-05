@@ -1,0 +1,136 @@
+﻿@using Project_2_Ecomm_116.Utility
+@inject IHttpContextAccessor httpContextAccessor
+@using Microsoft.AspNetCore.Http
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Project_2_Ecomm_116</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Project_2_Ecomm_116.styles.css" asp-append-version="true" />
+    @*CSS REF*@
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-primary border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+               <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item col-1">
+                            <img width="70%" height="100%" src="~/images/book1.jpg" />
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Order Management</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-action="Index" asp-controller="Orders" asp-area="Admin">All Orders</a>
+                                <a class="dropdown-item" asp-action="Index" asp-controller="ApprovedOrder" asp-area="Admin">Approved Orders</a>
+                                <a class="dropdown-item" asp-action="Index" asp-controller="PendingOrder" asp-area="Admin">Pending Orders</a>
+                                <a class="dropdown-item" class="dropdown" asp-area="Admin" asp-controller="DateWiseOrders" asp-action="Index">DateWise Orders</a>
+
+                            </div>
+                        </li>
+                       
+                        @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Employee) || User.IsInRole(SD.Role_Individual) || User.IsInRole(SD.Role_Company))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">View My Orders</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" asp-action="Index" asp-controller="Duplicate" asp-area="Admin">All Orders List </a>
+                                    <a class="dropdown-item" asp-action="Index" asp-controller="SimilarProduct" asp-area="Admin">Similar Products </a>
+                                    <a class="dropdown-item" asp-action="Index" asp-controller="MostlyPurchasedProduct" asp-area="Admin">Mostly purchased Products </a>
+                                    <a class="dropdown-item" asp-action="FavProductByDropDownList" asp-controller="MostlyPurchasedProduct" asp-area="Admin">Favourite Products Select List</a>
+
+                                </div>
+                            </li>
+                        }
+                       
+
+                        @if(User.IsInRole(SD.Role_Admin))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Content Management</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" asp-action="Index" asp-controller="Category" asp-area="Admin">Category</a>
+                                    <a class="dropdown-item" asp-action="Index" asp-controller="CoverType" asp-area="Admin">Cover Type</a>
+                                    <a class="dropdown-item" asp-action="Index" asp-controller="Product" asp-area="Admin">Product</a>
+                                    <a class="dropdown-item" asp-action="Index" asp-controller="Suggested" asp-area="Admin">Suggested Products</a>
+
+                                </div>
+                            </li>
+                        }
+
+                        @if(User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Employee))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Company/User</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" asp-action="Index" asp-controller="Company" asp-area="Admin">Company</a>
+                                    <a class="dropdown-item" asp-action="Index" asp-controller="User" asp-area="Admin">User</a>
+                                    
+                                </div>
+                            </li>
+                        }
+
+                        @if (httpContextAccessor.HttpContext.Session.GetInt32(SD.Ss_CartSessionCount) != null &&
+                        httpContextAccessor.HttpContext.Session.GetInt32(SD.Ss_CartSessionCount) != 0)
+                        {
+                            var count = httpContextAccessor.HttpContext.Session.GetInt32(SD.Ss_CartSessionCount);
+                            <li>
+                                <a asp-area="Customer" asp-controller="Cart" asp-action="Index" class="nav-link text-dark">
+                                    <i class="fas fa-shopping-cart"></i>&nbsp;(@count)
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a asp-area="Customer" asp-controller="Cart" asp-action="Index" class="nav-link text-white">
+                                    <i class="fas fa-shopping-cart"></i>&nbsp;(0)
+                                </a>
+                            </li>
+                        }
+
+                    </ul>
+
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - Project_2_Ecomm_116 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @*JS REF*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/e19c476714.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

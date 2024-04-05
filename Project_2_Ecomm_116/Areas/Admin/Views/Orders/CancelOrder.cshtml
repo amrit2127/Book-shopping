@@ -1,0 +1,24 @@
+﻿@model int
+<div class="container row">
+
+    <div>
+        <a class="btn btn-success" asp-action="Index" asp-controller="Home" asp-area="Customer">
+            <i class="bi bi-arrow-left-square"></i>Back To Home
+        </a>
+    </div>
+
+
+    <div class="col-12 text-center">
+        <h1 class="text-primary text-center">Order Cancelled Successfully</h1><br />
+        <img src="~/images/cancel.gif" width="50%" />
+    </div>
+    <div class="col-12 text-center" style="color:green">
+        <br />
+        Your Order has been Cancelled Successfully!!!
+         <br />
+        We will send a follow up email shortly!!!        
+        <br />
+
+        Your Order Number is :@Model
+    </div>
+</div>

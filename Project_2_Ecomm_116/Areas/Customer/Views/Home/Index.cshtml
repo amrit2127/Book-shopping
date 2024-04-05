@@ -1,0 +1,65 @@
+﻿@* @{
+    ViewData["Title"] = "Home Page";
+}
+ *@
+@* <div class="text-center">
+    <h1 class="display-4">Welcome to Ecomm Project</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+
+
+
+    <form asp-action="Index" asp-controller="Home" method="get">
+        <div class="input-group">
+            <input type="text" name="searchBy" placeholder="Search by Title or Author " class="form-control" />
+            <div class="input-group-append">
+                <select name="search">
+                    <option value="Title">Title</option>
+                    <option value="Author">Author</option>
+                    <option value="All Products">All Products</option>
+                </select>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-lg-3 col-md-6">
+            <div class="row p-2" height="100px" width="100px">
+                    <div class="col-12  p-1"  style="border:1px solid #008cba; border-radius: 5px;" height="100px" width="100px">
+                    <div class="card" style="border:0px;" height="300px" width="100px">
+                        <img src="@product.ImageUrl" class="card-img-top rounded" height="400px" width="100px" />
+                            <div class="pl-1">
+                                <p class="card-title h5"><b style="color:#2c3e50">@product.Title</b></p>
+                                <p class="card-title text-primary">by: <b>@product.Author</b></p>
+                            </div>
+                            <div style="padding-left:5px;">
+                                <p>List Price: <strike><b class="">$@product.ListPrice.ToString("0.00")</b></strike></p>
+                            </div>
+                            <div style="padding-left:5px;">
+                                <p style="color:maroon">As low as: <b class="">$@product.Price100.ToString("0.00")</b></p>
+                            </div>
+                        </div>
+                        <div>
+                            <a asp-action="Details" class="btn btn-primary form-control" asp-route-id="@product.Id">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+@* </div> *@
+
+@section Scripts
+{
+    <script src="~/js/product.js"></script>
+}
+
+
+
+
